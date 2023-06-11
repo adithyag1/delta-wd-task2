@@ -33,7 +33,7 @@ let started = false;
 let mousex = 0;
 let mousey = 0;
 let time = 0;
-let enemy_health=100;
+let enemy_health=300;
 let leaderboard = localStorage.getItem('leaderboard') || "";
 if (leaderboard[0] === ",") leaderboard = leaderboard.slice(1);
 if (leaderboard[leaderboard.length - 1] === ",") leaderboard = leaderboard.slice(0, -1);
@@ -408,7 +408,7 @@ function reloadPage() {
 
 document.addEventListener("keydown", move_player);
 document.addEventListener("mousedown", shoot);
-setInterval(enemy_shoot,5000);
+setInterval(enemy_shoot,4000);
 const rect = canvas.getBoundingClientRect();
 //rect gets the position of canvas top left point
 
