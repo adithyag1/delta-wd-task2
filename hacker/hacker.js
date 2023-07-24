@@ -304,7 +304,7 @@ function draw_everything() {
                     sound();
                 }
             }
-            catch (error) { }
+            catch(error){console.log(error)}
         }
         try {
 
@@ -337,7 +337,7 @@ function draw_everything() {
                 if (score > 0) score--;
             }
         }
-        catch (error) { }
+        catch(error){console.log(error)}
     }
 
     for(let i=0;i<enemies.length;i++){
@@ -353,7 +353,7 @@ function draw_everything() {
                 bullets[i].kills++;
             }
         }
-        catch(error){}
+        catch(error){console.log(error)}
         
         }
         if (
