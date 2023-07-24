@@ -180,7 +180,7 @@ function draw_everything(){
                     score+=4;
                 }
             }
-            catch(error){}      
+            catch(error){console.log(error)}      
         }
         try{
 
@@ -215,7 +215,7 @@ function draw_everything(){
                     if(score>0) score--;
                 }
         }
-        catch(error){}
+        catch(error){console.log(error)}
     }
 
     if(player.health<=0||home_health<=0){
